@@ -70,7 +70,7 @@ main > p {
 
 .tarjeta-taller {
   background-color: var(--fondo-tarjeta);
-  border-radius: 12px;
+  border-radius: 5px;
   padding: 1.75rem;
   text-decoration: none;
   color: inherit;
@@ -106,7 +106,95 @@ main > p {
   color: var(--principal);
   background-color: var(--acento);
   padding: 0.35rem 0.75rem;
-  border-radius: 20px;
+  border-radius: 5px;
   width: fit-content;
   margin-top: 1rem;
+}
+
+.contenedor-login {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjeta-login {
+  background-color: var(--fondo-tarjeta);
+  width: 100%;
+  max-width: 440px;
+  padding: 2.5rem 2.25rem;
+  border-radius: 5px;
+}
+
+.tarjeta-login h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.formulario-login {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.campo label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--texto-principal);
+}
+
+.campo label span {
+  color: #d16662;
+}
+
+.campo input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  border: 1.5px solid #dcdfe6;
+  border-radius: 5px;
+  background-color: #fdfdfd;
+  color: var(--texto-principal);
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.campo input:focus {
+  border-color: var(--principal);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(0, 86, 179, 0.12);
+}
+
+.campo input::placeholder {
+  color: #adb5bd;
+}
+
+.boton-login {
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.9rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--principal);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.boton-login:hover {
+  background-color: var(--principal-interaccion);
+  box-shadow: var(--sombra-interaccion);
+}
+
+.boton-login:active {
+  transform: scale(0.99);
 }
