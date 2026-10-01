@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav">
+    <a href="../index.html">Talleres</a>
+    <a href="../registro/registro.html">Iniciar sesión</a>
+  </nav>
+
+  <main class="contenedor seccion-detalle">
+    <h1>Introducción a Python</h1>
+    <p>Instructor: Ing. María López</p>
+    <p>Fecha: 2026-08-10</p>
+    <p>Asistentes registrados: <span id="contador">138</span> / 25</p>
+
+    <h2>Registrar asistencia</h2>
+    <form class="form-registro" id="formAsistencia">
+      <input type="text" id="nombre" placeholder="Nombre completo" required>
+      <input type="text" id="boleta" placeholder="Boleta" required>
+      <button type="submit" class="btn-primario">Registrar</button>
+    </form>
+
+    <!-- Contenedor dinámico del mensaje de confirmación -->
+    <div id="mensajeConfirmacion"></div>
+
+    <h2>Alumnos registrados</h2>
+    <p class="mensaje-error">No autorizado</p>
+  </main>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
