@@ -40,7 +40,6 @@ nav a {
 
 nav a:hover {
   color: var(--principal-interaccion);
-  text-decoration: underline;
 }
 
 header, main {
@@ -84,7 +83,6 @@ main > p {
 
 .tarjeta-taller:hover {
   transform: translateY(-6px);
-  box-shadow: var(--sombra-interaccion);
   background-color: #fafcff;
 }
 
