@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de Redes</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="../index.html">Talleres</a>
+        <a href="../registro.html">Iniciar sesión</a>
+    </nav>
+
+    <main class="contenedor seccion-detalle">
+        <h1>Fundamentos de Redes</h1>
+        <p>Instructor: Ing. Carlos Ramírez</p>
+        <p>Fecha: 2026-08-12</p>
+        <p>Asistentes registrados: <span id="contador">64</span> / 30</p>
+
+        <h2>Registrar asistencia</h2>
+        <form class="form-registro" id="formAsistencia">
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+            <input type="text" id="boleta" placeholder="Boleta" required>
+            <button type="submit" class="btn-primario">Registrar</button>
+        </form>
+
+        <!-- Contenedor dinámico del mensaje de confirmación -->
+        <div id="mensajeConfirmacion"></div>
+
+        <h2>Alumnos registrados</h2>
+        <p class="mensaje-error">No autorizado</p>
+    </main>
+
+    <script src="../js/talleres.js"></script>
+</body>
+</html>
